@@ -1,0 +1,67 @@
+#animation {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  position: relative;
+  animation: mymove 2s;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(0deg);
+  }
+  to {
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+  }
+}
+h1{
+  text-align: center;
+  color: blue;
+}
+
+
+#para {
+  border: 10px red;
+  width: 50%;
+}
+#para:hover {
+  direction: rtl;
+  cursor: pointer;
+  transform: translateX(600px);
+}
+#image:hover {
+  filter: blur(5px);
+  cursor: pointer;
+}
+#image1:hover {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+#image2:hover {
+  cursor: pointer;
+  filter: opacity(0.5);
+}
+@media screen and (max-width: 300px) {
+  #media img {
+    width: 92%;
+  }
+}
+@media screen and (min-width: 301px) and (max-width: 799px) {
+  #media img {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 800px) {
+  #media img {
+    width: 22%;
+  }
+}
+#shadow {
+  color: white;
+  text-shadow: 1px 1px 2px red, 0 0 25px green, 0 0 5px darkgreen;
+}
